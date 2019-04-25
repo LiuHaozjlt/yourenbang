@@ -1,14 +1,16 @@
 <template>
     <div>
-        <head/>
+        <headr/>
+        <tab></tab>
         <foot/>
     </div>
 </template>
 
 <script>
-import head from '../src/components/header'
+import headr from '../src/components/header'
 import foot from '../src/components/footer'
 import slide from './components/slide'
+import tab from './components/tab'
 export default {
     data(){
         return{
@@ -16,10 +18,18 @@ export default {
         }
     },
     components:{
-        head,
+        headr,
         foot,
-        slide
+        slide,
+        tab
     }
     
 }
 </script>
+
+<style>
+.el-tabs__nav{
+    float:none!important;
+}
+</style>
+
